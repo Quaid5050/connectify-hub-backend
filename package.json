@@ -1,0 +1,21 @@
+{
+  "name": "connectify-hub-backend",
+  "version": "1.0.0",
+  "description": "Connectify hub backend with Rest and Graphql Apis",
+  "main": "index.js",
+  "scripts": {
+    "devStart": "nodemon app.js",
+    "start": "nodemon app.js"
+  },
+  "author": "Quaid Ahmed",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-graphql": "^0.12.0",
+    "graphql": "^15.8.0",
+    "jsonwebtoken": "^9.0.1",
+    "neo4j-driver": "^5.11.0",
+    "nodemon": "^3.0.1"
+  }
+}
