@@ -3,6 +3,14 @@ const router = express.Router();
 const jwt = require('jsonwebtoken');
 
 
+
+/* GET home page. */
+router.get('/', (req, res, next) => {
+  res.json("start");
+});
+
+/*
+
 const verifyToken = (req, res, next) => {
   const bearerHeader = req.headers['authorization'];
   if (typeof bearerHeader !== 'undefined') {
@@ -19,12 +27,6 @@ const verifyToken = (req, res, next) => {
     res.sendStatus(403);
   }
 }
-
-/* GET home page. */
-router.get('/', (req, res, next) => {
-  res.json("start");
-});
-
 
 router.post('/login', (req, res, next) => {
   const user = {
@@ -55,7 +57,7 @@ router.post('/profile', verifyToken, (req, res, next) => {
 
 
 
-
+*/
 
 
 

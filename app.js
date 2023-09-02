@@ -1,11 +1,11 @@
 
 const express = require('express');
-require("dotenv").config();
-const cors = require('cors');
+// require("dotenv").config();
+// const cors = require('cors');
 const app = express();
 // Enable CORS for all routes
-app.use(cors());
-const {graphqlHttp}=require("express-graphql");
+// app.use(cors());
+// /const {graphqlHttp}=require("express-graphql");
 
 
 
@@ -17,7 +17,7 @@ const stressTestingRouter = require('./routes/rest/stressTesting');
 
 
 app.use('/', indexRouter);
-app.use("/neo4j", neo4jRouter);
+// app.use("/neo4j", neo4jRouter);
 app.use("/stressTesting", stressTestingRouter);
 
 
@@ -34,8 +34,8 @@ app.use("/stressTesting", stressTestingRouter);
 
 
 //app listen 
-const port =process.env.PORT || 3000;
-app.listen(port, () => {
+// const port =process.env.PORT || 3000;
+app.listen(3000, () => {
     console.log(`Server is running on port ${port} `);
 });
 
