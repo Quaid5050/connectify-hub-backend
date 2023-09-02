@@ -17,7 +17,7 @@ function executeAutocannon(command) {
 
 // Define a route for running autocannon
 router.post('/run-autocannon', async (req, res) => {
-    // const { url, connections, duration, pipelining } = req.body;
+     const { url, connections, duration, pipelining } = req.body;
     /*"{
         "url": "https://quaidahmed.tech",
         "connections": 1000,
@@ -26,12 +26,7 @@ router.post('/run-autocannon', async (req, res) => {
       }"
     */
     
-    const url = "https://quaidahmed.tech";
-    const connections = 1000;
-    const duration = 20;
-    const pipelining = 10;
-    
-    
+
     if (!url) {
       return res.status(400).json({ error: 'URL is required' });
     }
