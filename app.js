@@ -34,14 +34,14 @@ app.use("/stressTesting", stressTestingRouter);
 
 
 //app listen 
-const port =process.env.PORT || 4000;
+const port =process.env.PORT || 3000;
 app.listen(port, () => {
     console.log(`Server is running on port ${port} `);
 });
 
 // Enable CORS for a specific origin
-app.use(cors({
-    origin: 'http://localhost:3000',
-  }));
+// app.use(cors({
+//     origin: 'http://localhost:3000',
+//   }));
 
 module.exports = app;
