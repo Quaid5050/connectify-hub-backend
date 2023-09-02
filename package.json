@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "devStart": "nodemon app.js",
-    "start": "nodemon app.js"
+    "start": "app.js"
   },
   "author": "Quaid Ahmed",
   "license": "ISC",
